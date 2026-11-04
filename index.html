@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#111114">
+  <title>Just Music MP3</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-mark">♫</span> just music <b>mp3</b></a>
+    <nav><button class="nav active" data-view="home">⌂ <span>Início</span></button><button class="nav" data-view="search">⌕ <span>Buscar</span></button><button class="nav" data-view="library">▤ <span>Sua biblioteca</span></button></nav>
+    <div class="side-label">SUA COLEÇÃO</div>
+    <button class="side-link" data-view="favorites">♡ Músicas curtidas</button>
+    <button class="side-link" data-view="artists">♬ Artistas</button>
+    <div class="side-note">Sua música. Do seu jeito.<br><small>Sem anúncios inseridos pelo Just Music.</small></div>
+  </aside>
+  <main>
+    <header><div class="arrows"><button aria-label="Voltar">‹</button><button aria-label="Avançar">›</button></div><div class="top-actions"><span class="source-pill">YOUTUBE + SOUNDCLOUD</span><button class="profile">M</button></div></header>
+    <section class="hero">
+      <div><p class="eyebrow">SOM EM PRIMEIRO LUGAR</p><h1>Toda música.<br><em>Um só lugar.</em></h1><p class="hero-copy">Encontre faixas, descubra artistas e monte sua coleção.</p><button class="primary" id="explore">Explorar músicas <span>→</span></button></div>
+      <div class="hero-art"><div class="disc"><div class="disc-center">♫</div></div><span class="floating f1">JUST<br>MUSIC</span><span class="floating f2">MP3</span></div>
+    </section>
+    <section class="content" id="content">
+      <div class="section-head"><div><p class="eyebrow">PARA COMEÇAR</p><h2>Explore músicas</h2></div><span class="muted">Catálogo pesquisável</span></div>
+      <form id="search-form" class="searchbar"><span>⌕</span><input id="query" placeholder="Busque músicas ou artistas..." autocomplete="off"><button>Buscar</button></form>
+      <div class="filters"><button class="filter active" data-source="all">Tudo</button><button class="filter" data-source="youtube">YouTube</button><button class="filter" data-source="soundcloud">SoundCloud</button></div>
+      <div id="status" class="status">Pesquise para encontrar faixas disponíveis nas plataformas conectadas.</div>
+      <div id="results" class="tracks"></div>
+      <div class="section-head artist-heading"><div><p class="eyebrow">DESCUBRA</p><h2>Artistas em destaque</h2></div></div>
+      <div class="artist-grid">
+        <article class="artist-card"><div class="artist-art a1">♪</div><b>Descubra novos sons</b><small>Pesquise por qualquer artista</small></article>
+        <article class="artist-card"><div class="artist-art a2">♫</div><b>Seus favoritos</b><small>Salve artistas na biblioteca</small></article>
+        <article class="artist-card"><div class="artist-art a3">♬</div><b>Mais para explorar</b><small>Catálogos das plataformas</small></article>
+      </div>
+    </section>
+  </main>
+  <footer class="player">
+    <div class="now-playing"><div class="mini-cover">♫</div><div><b id="now-title">Nada tocando</b><small id="now-artist">Escolha uma faixa</small></div></div>
+    <div class="player-center"><div class="controls"><button id="prev">Ⅱ</button><button class="play" id="play">▶</button><button id="next">↠</button></div><div class="progress"><span>—</span><div class="bar"><i></i></div><span>—</span></div></div>
+    <div class="player-right"><span>♫</span><span class="muted">JUST MUSIC MP3</span></div>
+    <div id="audio-host" hidden></div>
+  </footer>
+  <script src="app.js"></script>
+</body></html>
